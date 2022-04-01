@@ -46,7 +46,7 @@ export default useScroll;
 ```
 
 ### Education
-Belarusian State University of Informatics and Radioelectronics ( Computer science s)
+Belarusian State University of Informatics and Radioelectronics ( Computer science )
 
 ### English
 - English \- A1 (Beginner)
