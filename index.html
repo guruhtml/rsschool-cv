@@ -3,12 +3,104 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link href="style.css" rel="stylesheet">
 
-    <title>CV</title>
+    <title>cv</title>
   </head>
   <body>
+        <div class="layout">
+            <header id="header">
+                <h1 itemprop="name">ALIAKSEI VASILYEU</h1>
+                <h4>Frontend Engineer</h4>
+            </header>
+            <main id="main" itemscope itemtype="https://schema.org/Person">
+            
+                <section class="section-default" id="contacts">
+                    <h3>Contacts</h3>
+
+                    <ul>
+                        <li>
+                            <a href="tel:+375296666769">Phone</a>
+                        </li>
+                        <li>
+                            <a href="mailto:guruxhtml@gmail.com">Email</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/guruhtml" target="_blank" rel="nofollow">GitHub</a>
+                        </li>
+                    </ul>
+
+                </section>
+                <section class="section-default" id="Summary">
+                    <h3>Professional Skills Summary</h3>
+                    <ul>
+                        <li>Front End software development</li>
+                        <li>Leading and mentoring skills</li>
+                        <li>High communicative and interpersonal skills</li>
+                        <li>Self-motivated</li>
+                    </ul>
+                </section>
+                <section class="section-default" id="Skills">
+                    <h3>Skills</h3>
+
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS/SCSS</li>
+                        <li>JavaScript</li>
+                        <li>ReactJs</li>
+                        <li>Git</li>    
+                    </ol>
+                </section>
+
+                <section class="section-default" id="Skills">
+                    <h3>Education</h3>
+
+                    <p>Belarusian State University of Informatics and Radioelectronics ( Computer science )</p>
+                </section>
+
+                <section class="section-default" id="Skills">
+                    <h3>English</h3>
+
+                    <p>A1 (Beginner)</p>
+                </section>
+
+                <section class="section-default" id="Code">
+                    <h3>Code Example</h3>
+                    <pre>
+                        <code>
+import { useEffect, useState } from 'react';
+
+const useScroll = (): number => {
+const [scrollY, setScrollY] = useState(0);
+
+useEffect(() => {
+    const updatePosition = () => {
+    setScrollY(window.pageYOffset);
+    };
+    window.addEventListener('scroll', updatePosition);
+    updatePosition();
+    return () => window.removeEventListener('scroll', updatePosition);
+}, []);
+
+return scrollY;
+};
+
+export default useScroll;
+                        </code>
+                    </pre>
+                </section>
+            </main>
+
+            <footer id="footer">
+                &copy;
+                <script>
+                    document.write(
+                        new Date().getFullYear()
+                    )
+                </script>
+            </footer>
+        </div>
     
   </body>
 </html>
