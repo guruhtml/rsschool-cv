@@ -1,0 +1,142 @@
+:root {
+    --cv-font-default: Arial, Helvetica, sans-serif;
+    --cv-font-code: "Courier New", "Courier", monospace;
+    --cv-gray-100: #f8f9fa;
+    --cv-gray-200: #f4f5f7;
+    --cv-gray-500: #222;
+    --cv-white-0: #fff;
+    --cv-green-100: #74a509; 
+    --cv-font-md: 16px;
+    --cv-font-sm: 14px;
+    --cv-shadow-default: -16px 20px 60px -30px rgb(17 34 68 / 35%);
+    --cv-gradient-default: linear-gradient(0deg,#eef0f4,#eef0f4),#f3f4f6;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cv-gray-500);
+    position: relative;
+    transition: color .3s;
+    display: inline-block;
+    vertical-align: top;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--cv-green-100);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+a:hover {
+    color: var(--cv-green-100);
+}
+
+a:hover:before {
+    color: var(--cv-green-100);
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+body {
+    margin: 0;
+    background-color: var(--cv-white-0);
+    font-family: var(--cv-font-default);
+    font-size: var(--cv-font-md);
+    text-rendering: optimizeSpeed;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.4;
+    height: 100%;
+}
+
+.layout {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header {
+    padding: 20px 40px;
+    background-color: var(--cv-green-100);
+    color: var(--cv-white-0);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+pre {
+    overflow: hidden;
+}
+
+pre,
+code {
+    font-family: var(--cv-font-code);
+    margin: 0;
+    padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.section-default {
+    padding: 20px 40px;
+    background-color: var(--cv-gray-200);
+    box-shadow: var(--cv-shadow-default);
+}
+
+.section-default + .section-default {
+    margin-top: 60px;
+}
+
+
+#footer {
+    padding: 20px 20px;
+    background: var(--cv-gradient-default);
+    font-size: var(--cv-font-sm);
+    margin-top: 60px;
+}
