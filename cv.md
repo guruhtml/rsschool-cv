@@ -3,18 +3,23 @@
 
 ---
 
+### Contacts
+- Phone +375-29-666-67-69
+- Email: guruxhtml@gmail.com
+- GitHub: [GuruHTML](https://github.com/guruhtml)
+
+### Professional Skills Summary
+- Front End software development
+- Leading and mentoring skills
+- High communicative and interpersonal skills
+- Self-motivated
+
 ### Skills
 - HTML
 - CSS/SCSS
 - JavaScript
 - ReactJs
 - Git
-
-### Contacts
-- Phone +375-29-666-67-69
-- Email: guruxhtml@gmail.com
-- GitHub: [GuruHTML](https://github.com/guruhtml)
-
 
 
 ### Code Example
@@ -40,6 +45,8 @@ const useScroll = (): number => {
 export default useScroll;
 ```
 
+### Education
+Belarusian State University of Informatics and Radioelectronics ( Computer science s)
 
 ### English
 - English \- A1 (Beginner)
