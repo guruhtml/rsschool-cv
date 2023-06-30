@@ -24,7 +24,6 @@
 - Figma
 - WordPress
 
-
 ### Code Example
 
 ```javascript
