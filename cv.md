@@ -20,6 +20,9 @@
 - JavaScript
 - ReactJs
 - Git
+- Redux
+- Figma
+- WordPress
 
 
 ### Code Example
